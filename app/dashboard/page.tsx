@@ -21,7 +21,7 @@ export default async function Dashboard() {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
 
-  const data = await getData(user.id);
+  const data = await getData(user?.id);
 
   return (
     <div>

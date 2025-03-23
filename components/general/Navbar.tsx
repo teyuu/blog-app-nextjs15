@@ -14,22 +14,22 @@ export default function Navbar() {
 
   return (
     <nav className="py-5 flex items-center justify-between">
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 ">
         <Link href="/">
-          <h1 className="text-3xl font-semibold">
-            Blog <span className="text-blue-500">Marshal</span>
+          <h1 className="text-3xl font-semibold flex items-center gap-2">
+            Blog <span className="text-blue-500 text-sm">FOR DEVS</span>
           </h1>
         </Link>
-        <div className="hidden sm:flex items-center gap-6">
+        <div className="hidden sm:flex items-center gap-6  ">
           <Link
             href="/"
-            className="text-sm font-medium hover:text-blue-500 transition-colors"
+            className="text-md font-medium hover:text-blue-500 transition-colors"
           >
             Home
           </Link>
           <Link
             href="/dashboard"
-            className="text-sm font-medium hover:text-blue-500 transition-colors"
+            className="text-md font-medium hover:text-blue-500 transition-colors"
           >
             Dashboard
           </Link>

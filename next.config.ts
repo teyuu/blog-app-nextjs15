@@ -14,6 +14,17 @@ const nextConfig: NextConfig = {
         protocol:"https",
         port:""
       },
+      {
+        hostname:"picsum.photos",
+        protocol:"https",
+        port:""
+      },
+      {
+        hostname:"i.pravatar.cc",
+        protocol:"https",
+        port:""
+      },
+      
     ]
   }
 };

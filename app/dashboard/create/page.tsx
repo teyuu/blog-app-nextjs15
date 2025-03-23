@@ -1,5 +1,6 @@
 import { handleSubmission } from "@/app/actions";
 import SubmitButton from "@/components/general/SubmitButton";
+import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -10,11 +11,18 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import Link from "next/link";
 
 export default function CreateBlogRoute() {
   return (
-    <div>
-      <Card className="max-w-lg mx-auto">
+    <div className="pt-5">
+      <Link
+        href={"/dashboard"}
+        className={buttonVariants({ variant: "secondary" })}
+      >
+        Back to dashboard
+      </Link>
+      <Card className="max-w-lg mx-auto mt-8">
         <CardHeader>
           <CardTitle>Create Post</CardTitle>
           <CardDescription>
@@ -35,7 +43,7 @@ export default function CreateBlogRoute() {
               <Label>Image URL</Label>
               <Input name="url" required type="url" placeholder="Image url" />
             </div>
-            <SubmitButton/>
+            <SubmitButton />
           </form>
         </CardContent>
       </Card>
